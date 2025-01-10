@@ -134,4 +134,31 @@ body {
 }
 
 
+.video-row {
+  display: flex;
+  justify-content: space-between; /* Even spacing between videos */
+  gap: 10px; /* Space between each video container */
+  margin-top: 20px; /* Space above the video row */
+}
+
+.video-container {
+  flex: 1; /* Ensures all videos are of equal width */
+  max-width: 24%; /* Each video occupies 24% of the row to fit four */
+  text-align: center; /* Centers the caption above the video */
+}
+
+.video-caption {
+  font-size: 14px;
+  font-weight: bold; /* Optional: Bold text for captions */
+  margin-bottom: 5px; /* Space between caption and video */
+  color: #333; /* Optional: Caption text color */
+}
+
+.video-item {
+  width: 100%; /* Video takes up full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visuals */
+  border: 1px solid #ddd; /* Optional: Border for each video */
+}
 
